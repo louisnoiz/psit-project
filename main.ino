@@ -45,9 +45,6 @@ void setup() {
   server.on ("/", HTTP_GET, [] (AsyncWebServerRequest * request) {
     request-> send (SPIFFS, "/index.html");
   });
-  server.on ("/beta.html", HTTP_GET, [] (AsyncWebServerRequest * request) {
-    request-> send (SPIFFS, "/beta.html");
-  });
   server.on ("/script.js", HTTP_GET, [] (AsyncWebServerRequest * request) {
     request-> send (SPIFFS, "/script.js");
   });
